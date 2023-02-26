@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemperatureConversion.MainPage"
+             Title="Temperature Conversion!"> 
+    <!--Copy the code below into your MainPage.xaml solution in Visual Studio!-->
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Padding="20"
+                >
+                <Label
+                    Text="Fahrenheit: "
+                    VerticalOptions="Center"
+                    Padding="5"
+                    FontSize="20"
+                    />
+                <Entry
+                    x:Name="txtFahrenheit"
+                    Placeholder="..."
+                    FontSize="20"
+                    MinimumWidthRequest="200"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="Convert"
+                MaximumWidthRequest="200"
+                FontSize="20"
+                Clicked="CalcCelsius"
+                />
+
+            <Label
+                x:Name="lblCelsiusResult"
+                Text="..."
+                HorizontalOptions="Center"
+                Margin="40"
+                FontSize="30"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+    <!--End copy here....-->
+</ContentPage>
