@@ -20,7 +20,7 @@ public partial class MainPage : ContentPage
 			double celsius = (fahrenheit - 32.0) * (5.0 / 9.0);
 
 			//Display the Celsius in the result label.
-			lblCelsiusResult.Text = celsius.ToString("#.#####");
+			lblCelsiusResult.Text = celsius.ToString("0.00###");
 
 			//Change the color of the label's text to white.
 			//We do this in case the text was previously red from
