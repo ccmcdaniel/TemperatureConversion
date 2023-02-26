@@ -27,7 +27,7 @@ public partial class MainPage : ContentPage
 			//the catch statement below.
 			lblCelsiusResult.TextColor = Color.Parse("White");
 		}
-		catch(FormatException ex)
+		catch(FormatException)
 		{
 			//If the user entered a non-numerical temperature, then
 			//output an error message to the result label and set its
